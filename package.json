@@ -1,0 +1,26 @@
+{
+  "name": "confluence-macro-custom-ui",
+  "version": "1.0.50",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "@forge/api": "^3.9.0",
+    "@forge/events": "^0.8.39",
+    "@forge/resolver": "1.5.38",
+    "@forge/ui": "^1.11.1",
+    "@sendgrid/mail": "^8.1.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "description": "This project contains a Forge app written in Javascript that displays `Hello World!` in a Confluence macro.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": ""
+}

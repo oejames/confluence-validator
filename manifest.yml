@@ -1,0 +1,42 @@
+modules:
+  confluence:contentBylineItem:
+    - key: page-validation-byline
+      function: resolver
+      title: 'Last Validated:'
+      dynamicProperties:
+        function: dynamicProps
+  macro:
+    - key: page-validation-macro
+      function: validationMacro
+      title: Page Validation
+  function:
+    - key: resolver
+      handler: index.run
+    - key: validationFunc
+      handler: index.run
+    - key: validationMacro
+      handler: index.run
+    - key: dynamicProps
+      handler: index.dynamicPropertiesHandler
+
+permissions:
+  scopes:
+    - read:confluence-content.summary
+    - write:confluence-content
+    - read:confluence-props
+    - write:confluence-props
+    - read:confluence-user
+    - read:page:confluence
+    - 'storage:app'
+  external:
+      fetch:
+        backend:
+          - 'https://hooks.slack.com/triggers/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'
+  content:
+    styles:
+      - unsafe-inline
+
+app:
+  id: ari:cloud:ecosystem::app/d46e258d-4a7f-4f37-b576-040745ba6d37
+  runtime:
+    name: nodejs18.x
