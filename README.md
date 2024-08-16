@@ -2,12 +2,12 @@
 
 This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation via Slack notification.
 
-Before:
-![image](https://github.com/user-attachments/assets/0393ac6a-25e3-4f7d-97bb-fd40808a13f9)
+Before:  
+<img src="https://github.com/user-attachments/assets/0393ac6a-25e3-4f7d-97bb-fd40808a13f9" alt="Before Image" width="700"/>
 
-After:
-![image](https://github.com/user-attachments/assets/b9a36158-856a-4c82-a660-3c64539a4533)
-![image](https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351)
+After:  
+<img src="https://github.com/user-attachments/assets/b9a36158-856a-4c82-a660-3c64539a4533" alt="After Image 1" width="700"/>
+<img src="https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351" alt="After Image 2" width="700"/>
 
 
 ## Setup Instructions
@@ -69,21 +69,37 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXX
 
 This app sends validation requests to a Slack channel of your choice. To set this up, create a new Slack workflow:
 
-1. Go to your Slack workspace and click on "Apps" in the left sidebar.
-2. Search for "Workflow Builder" and open it.
-3. Click "Create" to start a new workflow.
-4. Choose "Webhook" as the trigger. Copy the webhook URL provided by Slack and update it in both .env  and manifest.yml.
-5. Click 'add varialbes' and set the following variables:
+1. Go to your Slack workspace and click on "Add Apps" in the left sidebar. 
+<img src="https://github.com/user-attachments/assets/96225b91-fa99-4517-8759-e7e70d62c761" alt="Slack Apps" width="250"/>
+
+2. Click on Workflows and create a new workflow 
+<img src="https://github.com/user-attachments/assets/2f5a899e-27ec-4024-bbc7-a260dd37dfab" alt="New Workflow" width="300"/>
+
+3. Choose "From a webhook" to start the workflow. 
+
+4. Click "Set Up Variables" and add the following variables:
 - pageOwner
 - pageName
-- pageLink
-6. Add a "Send a message to Slack channel" step.
+- pageLink 
 
-  - Choose the channel where you want the validation requests to be sent.
-  - In the message text, use the following template:
+<img src="https://github.com/user-attachments/assets/602a6f3a-3e15-4786-9093-9fd4b577dea1" alt="Setup Variables 2" width="400"/>
+
+5. Copy the webhook URL provided by Slack under "Web Request URL" and update it in .env and manifest.yml.
+
+
+6. Add a new step "Send a message to Slack channel" to the workflow. 
+<img src="https://github.com/user-attachments/assets/70ffb5d6-feaf-40c7-a4f9-514e0512ed06" alt="Slack Message" width="300"/>
+
+
+
+  - Choose a channel to send the validation requests.
+  - In the message text, copy the following template:
       
-@channel: Request for page validation from {{pageOwner}} for the page "{{pageName}}".
+     ```
+      @channel: Request for page validation from {{pageOwner}} for the page "{{pageName}}".
       Validate or archive the page here: {{pageLink}}
+      ```
+<img src="https://github.com/user-attachments/assets/4afc85ad-93e3-4603-bd58-8074d20298e2" alt="Message Template" width="300"/>
 
 7. Save the workflow.
 
