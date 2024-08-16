@@ -44,7 +44,7 @@ After:
          SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
          ```
 
-     Replace the URL with your actual Slack webhook URL (see Slack Workflow instructions below to obtain the URL)
+        Replace the URL with your actual Slack webhook URL (see Slack Workflow instructions below to obtain the URL)
 
 7. Deploy the app to the development environment using the Forge CLI command:
    ```
