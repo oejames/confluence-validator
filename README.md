@@ -28,7 +28,7 @@ After:
    - Choose "Forge" as the app type
    - Give your app a name and click "Create"
 
-3. Clone this repository to your local machine.
+3. Clone this repository to your local machine
 
 4. Update the manifest.yml file:
    - Replace the app.id value with your new Forge app ID
