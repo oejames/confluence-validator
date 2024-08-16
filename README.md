@@ -111,7 +111,6 @@ The app adds a "Last Validated" section to the content byline of Confluence Clou
 ## Important Notes
 
 - The Slack webhook URL needs to be updated in both .env and manifest.yml
-- Ensure your Slack workflow is set up to handle the variables in the format they are sent in the code
 - You may need to adjust permissions in manifest.yml based on your specific Confluence instance settings
 
 ## Troubleshooting
