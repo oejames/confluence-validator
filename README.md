@@ -43,7 +43,9 @@ Upon integration into your Confluence Cloud instance, the app will add a "Last V
 6. Create a .env file in the root directory of the project:
   - Add the following line to the file:
   
-SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+   ```
+   SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+   ```
 
   Replace the URL with your actual Slack webhook URL (see Slack Workflow instructions below to obtain the URL)
 
