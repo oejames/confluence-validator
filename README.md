@@ -6,7 +6,6 @@ Before:
 <img src="https://github.com/user-attachments/assets/9f53472c-467a-4b56-8e34-318588de9622" alt="Before Image" width="700"/>
 
 After:  
-
 <img src="https://github.com/user-attachments/assets/e8b1b341-b112-4749-9e3c-de72df8b61da" alt="After Image 1" width="700"/>
 
 ## Setup Instructions
