@@ -38,7 +38,7 @@ After:
    - CONFLUENCE_URL: Replace with your Confluence URL
 
 6. Create a .env file in the root directory of the project:
-  - Add the following line to the file:
+     - Add the following line to the file:
   
       ```
       SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
