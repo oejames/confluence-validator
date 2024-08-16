@@ -9,9 +9,6 @@ After:
 <img src="https://github.com/user-attachments/assets/b9a36158-856a-4c82-a660-3c64539a4533" alt="After Image 1" width="700"/>
 <img src="https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351" alt="After Image 2" width="700"/>
 
-## Usage
-The app adds a "Last Validated" section to the content byline of Confluence Cloud pages. Users can click a "Validate" button to update this date or a "Request Validation" button to send a validation request notification via Slack.
-
 ## Setup Instructions
 
 1. Set up your Forge development environment:
@@ -106,6 +103,9 @@ This app sends validation requests to a Slack channel of your choice. To set thi
 <img src="https://github.com/user-attachments/assets/4afc85ad-93e3-4603-bd58-8074d20298e2" alt="Message Template" width="300"/>
 
 7. Save the workflow.
+
+## Usage
+The app adds a "Last Validated" section to the content byline of Confluence Cloud pages. Users can click a "Validate" button to update this date or a "Request Validation" button to send a validation request notification via Slack.
 
 ## Important Notes
 
