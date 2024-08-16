@@ -2,6 +2,14 @@
 
 This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation from page owners.
 
+Before:
+![image](https://github.com/user-attachments/assets/0393ac6a-25e3-4f7d-97bb-fd40808a13f9)
+
+After:
+![image](https://github.com/user-attachments/assets/b9a36158-856a-4c82-a660-3c64539a4533)
+![image](https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351)
+
+
 ## Setup Instructions
 
 1. Set up your Forge development environment:
@@ -34,8 +42,14 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXX
 7. Deploy the app using Forge CLI commands:
 forge deploy
 
-7. Install the app in your Atlassian site:
+8. Install the app in your Atlassian site:
 forge install
+
+10. If ready to deploy for production instead of the default development environment:
+    - Uninstall the development version, if any, by clicking Apps and Manage Apps in Confluence
+    - Run the commands:
+   forge deploy --environment production
+   forge install --environment production
 
 ## Slack Workflow/Webhook Setup
 
