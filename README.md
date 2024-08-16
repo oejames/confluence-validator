@@ -51,7 +51,7 @@ After:
    forge deploy
    ```
 
-9. Install the app in your Atlassian Confluence Cloud (note: this will isntall the development version):
+9. Install the app in your Atlassian Confluence Cloud (note: this command will install to the development environment):
    ```
    forge install
    ```
