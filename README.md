@@ -97,8 +97,8 @@ This app sends validation requests to a Slack channel of your choice. To set thi
   - In the message text, copy the following template:
       
      ```
-      @channel: Request for page validation from {{pageOwner}} for the page "{{pageName}}".
-      Validate or archive the page here: {{pageLink}}
+      @channel: Request for page validation in Confluence for the page "{{pageName}}" owned by {{pageOwner}}.
+      Please validate or archive the page here: {{pageLink}}
       ```
 <img src="https://github.com/user-attachments/assets/4afc85ad-93e3-4603-bd58-8074d20298e2" alt="Message Template" width="300"/>
 
