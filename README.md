@@ -59,12 +59,12 @@ After:
 11. When ready to deploy for production:
     - Uninstall the development version of the app by clicking "Apps" and "Manage Apps" in Confluence
     - Run these commands:
-    ```
-    forge deploy --environment production
-    ```
-      ```
-      forge install --environment production
-      ```
+       ```
+       forge deploy --environment production
+       ```
+         ```
+         forge install --environment production
+         ```
 
 ## Slack Workflow/Webhook Setup
 
