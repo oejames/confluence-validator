@@ -3,7 +3,7 @@
 This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as up-to-date and request validation to page owners via Slack notification. 
 
 Before:  
-<img src="https://github.com/user-attachments/assets/9bb0e877-fc2d-4932-8529-13c602755812" alt="Before Image" width="700"/>
+<img src="https://github.com/user-attachments/assets/9f53472c-467a-4b56-8e34-318588de9622" alt="Before Image" width="700"/>
 
 After:  
 
