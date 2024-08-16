@@ -1,6 +1,6 @@
 # Confluence Page Validation App
 
-This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation from page owners.
+This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation via Slack notification.
 
 Before:
 ![image](https://github.com/user-attachments/assets/0393ac6a-25e3-4f7d-97bb-fd40808a13f9)
@@ -14,8 +14,14 @@ After:
 
 1. Set up your Forge development environment:
    - Install Node.js (version 18.x or later)
-   - Install the Forge CLI: npm install -g @forge/cli
-   - Log in to your Atlassian account: forge login
+   - Install the Forge CLI:
+     ```
+     npm install -g @forge/cli
+     ```
+   - Log in to your Atlassian account:
+     ```
+     forge login
+     ```
 
 2. Create a new Forge app in your Atlassian developer console:
    - Go to https://developer.atlassian.com/console/myapps/
@@ -30,26 +36,34 @@ After:
    - In the permissions section, update the Slack webhook URL under external.fetch.backend (see Slack Workflow instructions below to obtain the URL)
 
 5. Update the following variable in index.js:
-   - CONFLUENCE_URL: Replace with your Confluence instance URL
+   - CONFLUENCE_URL: Replace with your Confluence URL
 
 6. Create a .env file in the root directory of the project:
   - Add the following line to the file:
   
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
 
-  Replace the URL with your actual Slack webhook URL (see Slack Workflow section below)
+  Replace the URL with your actual Slack webhook URL (see Slack Workflow instructions below to obtain the URL)
 
-7. Deploy the app using Forge CLI commands:
-forge deploy
+7. Deploy the app to the development environment using the Forge CLI command:
+   ```
+   forge deploy
+   ```
 
-8. Install the app in your Atlassian site:
-forge install
+9. Install the app in your Atlassian Confluence Cloud (note: this will isntall the development version):
+   ```
+   forge install
+   ```
 
-10. If ready to deploy for production instead of the default development environment:
-    - Uninstall the development version, if any, by clicking Apps and Manage Apps in Confluence
+11. If ready to deploy for production:
+    - Uninstall the development version of the app by clicking "Apps" and "Manage Apps" in Confluence
     - Run the commands:
-   forge deploy --environment production
-   forge install --environment production
+    ```
+    forge deploy --environment production
+    ```
+      ```
+      forge install --environment production
+      ```
 
 ## Slack Workflow/Webhook Setup
 
