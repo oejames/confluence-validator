@@ -56,9 +56,9 @@ After:
    forge install
    ```
 
-11. If ready to deploy for production:
+11. When ready to deploy for production:
     - Uninstall the development version of the app by clicking "Apps" and "Manage Apps" in Confluence
-    - Run the commands:
+    - Run these commands:
     ```
     forge deploy --environment production
     ```
