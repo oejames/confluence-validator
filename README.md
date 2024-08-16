@@ -1,6 +1,6 @@
 # Confluence Page Validation App
 
-This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation via Slack notification.
+This Forge app adds a validation feature to Confluence Cloud pages, allowing users to mark pages as validated and request validation via Slack notification. The feature is an in-line button on Confluence Cloud pages, and the app integrates with Slack to notify users when validation is required.
 
 Before:  
 <img src="https://github.com/user-attachments/assets/0393ac6a-25e3-4f7d-97bb-fd40808a13f9" alt="Before Image" width="700"/>
