@@ -8,7 +8,6 @@ Before:
 After:  
 
 <img src="https://github.com/user-attachments/assets/e8b1b341-b112-4749-9e3c-de72df8b61da" alt="After Image 1" width="700"/>
-<img src="https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351" alt="After Image 2" width="700"/>
 
 ## Setup Instructions
 
@@ -107,6 +106,8 @@ This app sends validation requests to a Slack channel of your choice. To set thi
 
 ## Usage
 The app adds a "Last Validated" section to the content byline of Confluence Cloud pages. Users can click a "Validate" button to update this date or a "Request Validation" button to send a validation request notification via Slack.
+
+<img src="https://github.com/user-attachments/assets/362cbdda-f838-4854-ac9f-27b5ac609351" alt="After Image 2" width="700"/>
 
 ## Important Notes
 
