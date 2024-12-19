@@ -34,7 +34,7 @@ After:
    - Replace the app.id value with your new Forge app ID
    - In the permissions section, update the Slack webhook URL under external.fetch.backend (see Slack Workflow instructions below to obtain the URL)
 
-5. Update the following variable in src/index.js:
+5. Update the following variable in src/config/constants.js:
    - CONFLUENCE_URL: Replace with your Confluence URL
 
 6. Create a .env file in the root directory of the project:
