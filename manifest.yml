@@ -17,7 +17,7 @@ modules:
     - key: validationMacro
       handler: index.run
     - key: dynamicProps
-      handler: index.dynamicPropertiesHandler
+      handler: handlers/dynamicProperties.dynamicPropertiesHandler
 
 permissions:
   scopes:
